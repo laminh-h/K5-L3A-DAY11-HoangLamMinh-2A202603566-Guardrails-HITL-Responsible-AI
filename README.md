@@ -1,5 +1,23 @@
 # Day 11 — Controlled Agent Security (2026)
 
+| Học viên | MSSV | Lớp |
+|----------|------|-----|
+| **Hoàng Lam Minh** | **2A202603566** | K5 · L3A |
+
+**Cấu hình model khi chạy bài này:** Blue = OpenRouter `liquid/lfm-3-1.7b:free` (bắt buộc) · Red / Red Advance = Gemini `gemini-3.5-flash`.
+
+**Chạy nhanh (từ gốc repo, sau khi điền `.env`):**
+
+```powershell
+.\.venv\Scripts\Activate.ps1
+python src/main.py --part 2   # CP2 — guardrails (in terminal)
+python src/main.py --part 3   # CP3 — sinh outputs/results.json, audit_log.json, metrics.json
+python src/main.py --part 4   # CP4 — sinh outputs/attack_results.json
+python scripts/grade.py --submission-dir . --out outputs/grade_report.json
+```
+
+---
+
 > 👤 **Hình thức:** bài tập **cá nhân** (1 người / 1 MSSV).  
 > 🎯 **Mục tiêu:** đóng vai **Blue Team** để học cách xây Guardrails phòng thủ, rồi đóng vai **Red Team** để tấn công agent **Red** hoặc **Red Advance**.  
 > ✅ Làm theo **Checkpoint 1 → 5** trong [`CHECKPOINTS.md`](CHECKPOINTS.md) · nộp theo [`SUBMISSION.md`](SUBMISSION.md).
