@@ -4,7 +4,7 @@
 |----------|------|-----|
 | **Hoàng Lam Minh** | **2A202603566** | K5 · L3A |
 
-**Cấu hình model khi chạy bài này:** Blue = OpenRouter `liquid/lfm-3-1.7b:free` (bắt buộc) · Red / Red Advance = Gemini `gemini-3.5-flash`.
+**Cấu hình model khi chạy bài này:** Blue = OpenRouter `liquid/lfm-3-1.7b:free` (bắt buộc) · Red / Red Advance = `gpt-4o-mini` (gọi qua OpenRouter: `OPENAI_BASE_URL=https://openrouter.ai/api/v1`, `OPENAI_MODEL=openai/gpt-4o-mini`).
 
 **Chạy nhanh (từ gốc repo, sau khi điền `.env`):**
 
